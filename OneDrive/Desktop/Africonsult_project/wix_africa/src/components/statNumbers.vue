@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-[#EDCD1F] grid grid-rows-2 grid-cols-2 place-items-center py-10 gap-7 border-t-30 border-[#3D5975]">
+  <section class="bg-[#EDCD1F] grid grid-rows-2 grid-cols-2 place-items-center py-10 gap-4 border-t-30 border-[#3D5975]">
     <div class="text-[#3D5975] text-center">
       <p class="font-bold text-5xl">2035</p>
       <h2 class="text-3xl font-semibold">Year Established</h2>

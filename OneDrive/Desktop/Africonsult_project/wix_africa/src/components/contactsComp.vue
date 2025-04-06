@@ -9,7 +9,7 @@
         <div class="mt-15 px-7">
             <div class="flex flex-col gap-4">
                 <h1 class="text-[#1E2D3B] text-5xl font-semibold">Inquiries</h1>
-                <p class="text-xl font-semibold">
+                <p class="text-xl font-medium">
                     For any inquiries, questions or commendations, please call: 123-456-7890 or fill out the following form
                 </p>
             </div>

@@ -12,7 +12,7 @@
     <div class="relative z-10 flex justify-center h-full pt-15 ">
       <div class="flex flex-col items-center gap-5">
         <h2 class="font-semibold text-3xl text-white text-center">LEADERS IN QUALITY CONSTRUCTION AND INFRASTRUCTURE</h2>
-        <img src="../assets/down.png" alt="downward" width="50px" class="mx-auto">
+        <img src="../assets/down.png" alt="downward" width="50px" class="mx-auto animate-bounce">
       </div>
     </div>
   </section>

@@ -8,6 +8,7 @@
   <ProjectsSect/>
   <!-- <clientsComp/> -->
   <contactComp/>
+  <formComp/>
 </div>
   
 </template>
@@ -20,6 +21,7 @@ import AboutSect from './components/AboutSect.vue'
 import statNumbers from './components/statNumbers.vue'
 import ProjectsSect from './components/ProjectsSect.vue'
 import contactComp from './components/contactsComp.vue'
+import formComp from './components/formComp.vue'
 
 export default {
   name: 'App',
@@ -30,7 +32,8 @@ export default {
     AboutSect,
     statNumbers,
     ProjectsSect,
-    contactComp
+    contactComp,
+    formComp
   }
 }
 </script>
