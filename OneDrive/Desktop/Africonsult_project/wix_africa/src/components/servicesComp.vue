@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col items-center w-80 mx-auto">
+  <div class="flex flex-col items-center w-80 mx-auto relative z-200 bg-white">
     <img :src="require(`@/assets/${image}`)" alt="Image" class="w-full h-80"/>
     <div class="flex flex-col items-start bg-[#F7F7F7] w-full py-8 px-5 gap-4">
       <h1 class="text-left text-[#3D5975] text-4xl font-semibold">{{ props.heading }}</h1>
