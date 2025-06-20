@@ -6,7 +6,7 @@ with the goal of deploying the model on wireless acoustic sensor networks.
 Since these systems have limited computing power, we focused on keeping the model lightweight  
 while still achieving accurate results across a range of bird species.
 
-Video Link : https://www.veed.io/view/7026e1a4-ad56-4240-a67f-78b5acef44a0?panel=share
+Video Link : https://www.veed.io/view/97f613e3-4913-47ce-8824-08d9d8305ea6?panel=share
 
 
 **Dataset**: [Western Mediterranean Wetland Birds Dataset](https://zenodo.org/record/7505820)  
