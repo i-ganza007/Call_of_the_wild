@@ -6,7 +6,7 @@ with the goal of deploying the model on wireless acoustic sensor networks.
 Since these systems have limited computing power, we focused on keeping the model lightweight  
 while still achieving accurate results across a range of bird species.
 
-Video Link : https://www.veed.io/view/86e965f1-55ad-4248-8a1c-e0bfdac700f8?panel=share
+Video Link : https://www.veed.io/view/7026e1a4-ad56-4240-a67f-78b5acef44a0?panel=share
 
 
 **Dataset**: [Western Mediterranean Wetland Birds Dataset](https://zenodo.org/record/7505820)  
@@ -19,30 +19,46 @@ It contains 5,795 labeled audio clips and over 17,500 spectrograms from 20 bird 
 | **Simple CNN**    | None        | Adam (0.001)   | 8      | 128        | None    | 40.46%   | 38.28%   | 40.46% | 46.94%    |
 | **Random Forest** | N/A         | N/A            | N/A    | N/A        | N/A     | 30.83%   | 22.59%   | 27.25% | 22.59%    |
 
-**Insights**
-⚙️ AdamW Model
+🔧 Insights Per Model
+✅ Simple CNN (Best Balanced Metrics)
 
-    L1 Regularization aggressively pruned weights, likely causing underfitting.
+    Performance: Achieved the highest F1 Score and balanced precision-recall.
 
-    Combined with a high learning rate and limited training (5 epochs), the model failed to converge effectively.
+    Optimizer: Adam with a learning rate of 0.001, known for adaptive learning and general reliability.
 
-    Even with dropout, performance remained poor due to insufficient training time and overly sparse weights.
+    Regularization: None — the model may benefit from light regularization to improve generalization.
 
-⚙️ SDG Function
+    Dropout: None — consider adding dropout to prevent overfitting.
 
-    L2 Regularization helped maintain weight stability.
+📈 Adagrad Function
 
-    Stochastic Gradient Descent is slower to converge, and while 9 epochs offered slightly better results, the model still struggled without dropout.
+    High Accuracy: 63.90% accuracy, likely benefiting from Adagrad's ability to adapt learning rates, especially in sparse data.
 
-    Performance improved over AdamW but remained limited due to undertraining and optimizer choice.
+    Weak F1/Recall: Despite accuracy, the F1 score (11.11%) and recall (15.67%) are low — suggesting poor class balance handling or overfitting to majority class.
 
-⚙️ Simple CNN
+    Regularizer: L2 (0.04) helped with generalization.
 
-    Best overall accuracy and precision, largely due to the Adam optimizer and a relatively deep architecture.
+    Batch Size: 32 — small batches may have helped Adagrad converge better.
 
-    The lack of dropout or regularization may have caused the model to overfit on dominant classes—reflected by high precision but much lower recall and F1.
+🔻 AdamW
 
-    Indicates strong memorization but poor generalization to minority classes.
+    Poor Performance: Accuracy and all other metrics were very low.
+
+    Possible Causes:
+
+        L1 Regularization might have overly penalized weights, causing underfitting.
+
+        High LR (0.01) for Adamax could cause unstable learning.
+
+        Dropout of 0.3 may also have contributed to reduced capacity.
+
+🌲 Random Forest
+
+    Decent Baseline: Classical ML method with 30.83% accuracy.
+
+    No Deep Learning Enhancements: Lower performance vs CNN, but decent for a non-deep model.
+
+    Useful for Comparison: Serves as a useful benchmark for evaluating deep learning gains.
 
 
 **Usage of this model**
