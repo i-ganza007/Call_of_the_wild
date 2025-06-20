@@ -14,10 +14,10 @@ It contains 5,795 labeled audio clips and over 17,500 spectrograms from 20 bird 
 
 | Model             | Regularizer | Optimizer (LR) | Epochs | Batch Size | Dropout | Accuracy | F1 Score | Recall | Precision |
 | ----------------- | ----------- | -------------- | ------ | ---------- | ------- | -------- | -------- | ------ | --------- |
-| **AdamW**         | L1          | Adamax (0.01)  | 5      | 128        | 0.3     | 11.85%   | 2.73%    | 9.31%  | 1.66%     |
-| **SDG Function**  | L2          | SGD (0.03)     | 9      | 32         | None    | 22.28%   | 11.45%   | 14.94% | 13.31%    |
-| **Simple CNN**    | None        | Adam (0.001)   | 7      | 128        | None    | 66.20%   | 17.98%   | 24.32% | 59.80%    |
-| **Random Forest** | N/A         | N/A            | N/A    | N/A        | N/A     | 36.30%   | 25.48%   | 29.14% | 27.64%    |
+| **AdamW**         | L1          | Adamax (0.01)  | 5      | 128        | 0.3     | 22.03%   | 5.03%    | 10.96%  | 4.53%     |
+| **Adagrad Function**  | L2(0.04)          | Adagrad (0.05)     | 9      | 32         | 0.2    | 63.90%   | 11.11%   | 15.67% | 13.31%    |
+| **Simple CNN**    | None        | Adam (0.001)   | 8      | 128        | None    | 40.46%   | 38.28%   | 40.46% | 46.94%    |
+| **Random Forest** | N/A         | N/A            | N/A    | N/A        | N/A     | 30.83%   | 22.59%   | 27.25% | 22.59%    |
 
 **Insights**
 ⚙️ AdamW Model
