@@ -19,8 +19,8 @@ It contains 5,795 labeled audio clips and over 17,500 spectrograms from 20 bird 
 | **Simple CNN**    | None        | Adam (0.001)   | 8      | 128        | None    | 40.46%   | 38.28%   | 40.46% | 46.94%    |
 | **Random Forest** | N/A         | N/A            | N/A    | N/A        | N/A     | 30.83%   | 22.59%   | 27.25% | 22.59%    |
 
-🔧 Insights Per Model
-✅ Simple CNN (Best Balanced Metrics)
+ Insights Per Model
+ Simple CNN (Best Balanced Metrics)
 
     Performance: Achieved the highest F1 Score and balanced precision-recall.
 
@@ -30,7 +30,7 @@ It contains 5,795 labeled audio clips and over 17,500 spectrograms from 20 bird 
 
     Dropout: None — consider adding dropout to prevent overfitting.
 
-📈 Adagrad Function
+Adagrad Function
 
     High Accuracy: 63.90% accuracy, likely benefiting from Adagrad's ability to adapt learning rates, especially in sparse data.
 
@@ -40,7 +40,7 @@ It contains 5,795 labeled audio clips and over 17,500 spectrograms from 20 bird 
 
     Batch Size: 32 — small batches may have helped Adagrad converge better.
 
-🔻 AdamW
+ AdamW
 
     Poor Performance: Accuracy and all other metrics were very low.
 
@@ -52,7 +52,7 @@ It contains 5,795 labeled audio clips and over 17,500 spectrograms from 20 bird 
 
         Dropout of 0.3 may also have contributed to reduced capacity.
 
-🌲 Random Forest
+ Random Forest
 
     Decent Baseline: Classical ML method with 30.83% accuracy.
 
